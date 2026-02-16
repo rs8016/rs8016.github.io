@@ -1,1 +1,241 @@
-<h1>Hello, world</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riku Sato | Digital Democracy Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a2a3a;
+            --accent-color: #00a896;
+            --bg-color: #fdfdfd;
+            --card-bg: #ffffff;
+            --text-color: #2d3436;
+            --muted-text: #636e72;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 100px 20px 60px;
+            text-align: center;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-top: 15px;
+            display: block;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 24px;
+            font-weight: 300;
+        }
+
+        .philosophy-box {
+            background-color: var(--card-bg);
+            border: 1px solid #edf2f7;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .value-item {
+            padding: 20px;
+            border-left: 2px solid #eee;
+        }
+
+        .value-title {
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: linear-gradient(transparent 70%, rgba(0, 168, 150, 0.1) 0%);
+            font-weight: 500;
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--muted-text);
+            border-left: 4px solid #eee;
+            padding-left: 20px;
+            margin: 40px 0;
+        }
+
+        .contact-section {
+            text-align: center;
+            background-color: #f1f5f9;
+            padding: 60px 20px;
+            border-radius: 20px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 20px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--muted-text);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .value-grid { grid-template-columns: 1fr; }
+            .philosophy-box { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <h1>佐藤 陸</h1>
+            <span class="tagline">Digital Democracy Enthusiast</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="mission">
+            <p class="quote">
+                「テクノロジーは、難しい技術のことじゃない。できなかったことを、できるようにする方法のことだ。」
+            </p>
+            <p>
+                私は、この言葉に救われました。プログラミングができるわけでも、政治に精通しているわけでもない。そんな私でも、<span class="highlight">「今の民主主義をもっと風通しの良いものにしたい」</span>という願いを持つことはできる。
+            </p>
+            <p>
+                AIやデジタル技術は、私たち一人ひとりの「小さな声」を拾い上げ、バラバラだった意見を「合意」へと変えていく可能性を秘めています。私はその可能性を信じる、一人の「Enthusiast（信奉者）」です。
+            </p>
+        </section>
+
+        <section id="values">
+            <h2>Values & Thinking</h2>
+            <div class="philosophy-box">
+                <p>
+                    私が大切にしているのは、誰かを批判することではなく、<span class="highlight">「対話と提案」によって未来を少しずつ改善していく</span>姿勢です。
+                </p>
+                
+                <div class="value-grid">
+                    <div class="value-item">
+                        <span class="value-title">分断より解決を</span>
+                        <p style="font-size: 0.9rem;">感情でぶつかり合うのではなく、データと事実、そしてAIの客観性を借りて、共通のゴールを探します。</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-title">オープンであること</span>
+                        <p style="font-size: 0.9rem;">意思決定のプロセスを透明にし、誰もが「なぜそうなったか」を納得できる社会を目指します。</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-title">決めつけない</span>
+                        <p style="font-size: 0.9rem;">正解は一つではありません。多様な声に耳を傾け、より良い答えがあれば柔軟に改善していきます。</p>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-title">まずは手を動かす</span>
+                        <p style="font-size: 0.9rem;">難しく考える前に、今できる身近なデジタル活用から始めてみることを大切にします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision">
+            <h2>Future Vision</h2>
+            <p>
+                2030年、一人ひとりの声が当たり前に政治に届き、納得感を持って社会が動いている。そんな「明るい未来」は、決して夢物語ではないはずです。
+            </p>
+            <p>
+                閉塞感を感じる今の社会でも、技術を正しく、そして優しく使うことで、私たちは「自分たちの手で未来を変えられる」という確信を取り戻せると信じています。
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Let's talk.</h2>
+            <p>「自分にも何かできるかも」という小さな思いを、一緒に形にしていきませんか？</p>
+            <a href="mailto:riku.sato.contact@example.com" class="contact-btn">お問い合わせ・対話はこちら</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Riku Sato. <br>Inspired by the vision of Digital Democracy.</p>
+    </footer>
+
+</body>
+</html>
